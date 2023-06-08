@@ -33,4 +33,4 @@ set.smartindent = true
 -- a stricter alternative which works better for the C language:
 set.cindent = true
 
-print("Welcome to NeoVim AXVIII3!")
+print("Welcome to NeoVim, AXVIII3!")
