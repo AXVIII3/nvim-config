@@ -1,34 +1,34 @@
 local set = vim.opt
 
--- turn on line numbers
+-- line numbers
 set.nu = true
 
--- length of an actual \t character:
+-- tabs and indents
 set.tabstop = 4
-
--- length to use when editing text (eg. TAB and BS keys)
--- (0 for ‘tabstop’, -1 for ‘shiftwidth’):
 set.softtabstop = -1
-
--- length to use when shifting text (eg. <<, >> and == commands)
--- (0 for ‘tabstop’):
 set.shiftwidth = 0
-
--- round indentation to multiples of 'shiftwidth' when shifting text
--- (so that it behaves like Ctrl-D / Ctrl-T):
 set.shiftround = true
-
--- if set, only insert spaces; otherwise insert \t and complete with spaces:
 set.expandtab = true
-
--- reproduce the indentation of the previous line:
 set.autoindent = true
-
--- try to be smart (increase the indenting level after ‘{’,
--- decrease it after ‘}’, and so on):
 set.smartindent = true
-
--- a stricter alternative which works better for the C language:
 set.cindent = true
 
+-- backup and file perms
+set.swapfile = false
+set.backup = false
+set.undodir = "C:/Users/anirb/AppData/Local/nvim/undodir"
+set.undofile = true
 
+-- searching
+set.hlsearch = false
+set.incsearch = true
+
+set.termguicolors = true
+
+set.scrolloff = 8
+set.signcolumn = "yes"
+set.isfname:append("@-@")
+
+set.updatetime = 50
+
+set.colorcolumn = "80"
