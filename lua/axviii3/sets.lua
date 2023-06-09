@@ -16,7 +16,8 @@ set.cindent = true
 -- backup and file perms
 set.swapfile = false
 set.backup = false
-set.undodir = "C:/Users/anirb/AppData/Local/nvim/undodir"
+set.undodir = os.getenv("LOCALAPPDATA") .. "/nvim/undodir" -- For windows
+-- set.undodir = os.getenv("HOME") .. "/.nvim/undodir" -- For UNIX
 set.undofile = true
 
 -- searching
